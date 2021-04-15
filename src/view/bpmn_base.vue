@@ -20,7 +20,6 @@ export default {
       try {
         console.log('state.bpmnModeler======>', state.bpmnModeler)
         console.log('xml========>', xml)
-        debugger;
         await state.bpmnModeler.importXML(xml);
       } catch (err) {
         console.error(err);
